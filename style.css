@@ -1,0 +1,238 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* font-family: 'Merriweather Sans', sans-serif; */
+    font-family: 'Oswald', sans-serif;
+}
+
+.title{
+    font-size: 4rem;
+    color: #072227;
+
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+/* .flex{
+    display: flex;
+    justify-content: left;
+} */
+
+/* Header */
+
+
+.navbar{
+    background-color: #072227;
+    position: fixed;
+    width: 80%;
+    justify-content: space-between;
+    padding: 0.4% 10% 0.4% 15%;
+}
+
+.name{
+    color: red;
+    height: 2%;
+
+}
+.name a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: white;
+    
+}
+.nav{
+    padding: 12px;
+}
+.nav a{
+    font-size: 1.6rem;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+.home-img{
+    width: 80%;
+}
+
+/* .nav a:active{
+    background-color:#AEFEFF ;
+    
+} */
+
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+  }
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #35858B;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+/* HOME */
+
+
+#home{
+    padding: 2% 10% 3%;
+    height: 800px;
+    background-color: #AEFEFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    height: 400px;
+    padding: 8%;
+}
+.hobby img{
+    width: 80%;
+}
+
+.text div {
+    padding: 4% 2%;
+}
+
+.desc{
+    font-size: 1.5rem;
+}
+
+.btn {
+    background: #66BFBF;
+    background-image: -webkit-linear-gradient(top, #66BFBF, rgba(30, 98, 208, 0.52));
+    background-image: -moz-linear-gradient(top, #66BFBF, rgba(30, 98, 208, 0.52));
+    background-image: -ms-linear-gradient(top, #66BFBF, rgba(30, 98, 208, 0.52));
+    background-image: -o-linear-gradient(top, #66BFBF, rgba(30, 98, 208, 0.52));
+    background-image: -webkit-gradient(to bottom, #66BFBF, rgba(30, 98, 208, 0.52));
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 21px;
+    font-weight: 500;
+    padding: 7px 9px;
+    -webkit-box-shadow: 16px 9px 21px 0 #66BFBF;
+    -moz-box-shadow: 16px 9px 21px 0 #66BFBF;
+    box-shadow: 16px 9px 21px 0 #66BFBF;
+    text-shadow: 4px 10px 14px #000000;
+    border: solid #337FED 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .btn:hover {
+    border: solid #337FED 1px;
+    background: rgba(30, 98, 208, 0.52);
+    background-image: -webkit-linear-gradient(top, rgba(30, 98, 208, 0.52), #66BFBF);
+    background-image: -moz-linear-gradient(top, rgba(30, 98, 208, 0.52), #66BFBF);
+    background-image: -ms-linear-gradient(top, rgba(30, 98, 208, 0.52), #66BFBF);
+    background-image: -o-linear-gradient(top, rgba(30, 98, 208, 0.52), #66BFBF);
+    background-image: -webkit-gradient(to bottom, rgba(30, 98, 208, 0.52), #66BFBF);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+ }
+
+/* HOBBIES */
+
+#hobbies{
+    text-align: center;
+    padding: 7% 8% 2%;
+    height: 700px;
+    background-color: #EAF6F6;
+}
+.hobbies{
+    padding: 4%;
+}
+.hobby{
+    flex-direction: column;
+    padding: 3%;
+    font-size: 1.5rem;
+    color: #072227;
+    background-color: white;   
+}
+
+.hobby img{
+    height: 200px;
+    margin-bottom: 4%;
+}
+
+/* SKILLS */
+
+#skills{
+    height: 700px;
+    padding: 7% 8% 2%;
+    background-color: #AEFEFF;
+}
+.skills{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img{
+    padding: 20px;
+}
+
+.progress{
+    margin: 20px;
+    height: 24px;
+    background-color:white ;
+    width: 400px;
+    border-radius: 18px;
+    font-size: small;
+    justify-content: center;
+    padding: 1%;
+}
+.new{
+    padding: 20px;
+}
+.progress p{
+    border-radius: 18px;
+    padding-left: 10px;
+    background-color: #072227;
+    color: white;
+}
+
+.web{
+    width: 60%;
+}
+.python{
+    width: 60%;
+}
+.java{
+    width: 20%;
+}
+.guitar{
+    width: 80%;
+}
+.singing{
+    width: 40%;
+}
+
